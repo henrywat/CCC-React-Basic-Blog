@@ -38,12 +38,13 @@ brew install node
 ```
 2. Install creat-react-app package if missing.
 npm
-: Node Package Manager is a software library (registry)
+:Node Package Manager is a software library (registry)
 ```
 npm install create-react-app
 ```
 3. Create basic_blog REACT App
-*npx - Node Package eXecute is simply an NPM package runner.*
+npx
+:Node Package eXecute is simply an NPM package runner.
 
 ```
 npx create-react-app basic_blog
