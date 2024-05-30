@@ -37,35 +37,32 @@ or
 brew install node
 ```
 2. Install creat-react-app package if missing.
-npm
-:Node Package Manager is a software library (registry)
 ```
 npm install create-react-app
 ```
+>npm - Node Package Manager is a software library (registry)
 3. Create basic_blog REACT App
-npx
-:Node Package eXecute is simply an NPM package runner.
-
 ```
 npx create-react-app basic_blog
 ```
+>npx - Node Package eXecute is simply an NPM package runner.
 4. Starts the development server.
-*The URL is 'http://localhost:3000' incase the page not loaded automatically.*
 ```
 cd basic_blog
 npm start
 ```
+>The URL is 'http://localhost:3000' incase the page not loaded automatically.
 
 ### Other commands for reference:
-Bundles the app into static files for production.
+- Bundles the app into static files for production.
 ```
 npm run build
 ```
-Starts the test runner.
+- Starts the test runner.
 ```
 npm test
 ```
-Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
+- Removes this tool and copies build dependencies, configuration files and scripts into the app directory. If you do this, you can’t go back!
 ```
 npm run eject
 ```
