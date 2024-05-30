@@ -68,6 +68,7 @@ npm run eject
 ```
 
 Directory Structure:
+```
 basic_blog
 ├── README.md
 ├── node_modules
@@ -85,4 +86,4 @@ basic_blog
     ├── App.test.js
     ├── index.css ***=> CSS of the web page***
     └──  index.js ***=> import App.js and call App() function***
-
+```
