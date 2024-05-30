@@ -28,7 +28,7 @@ Fetch data from https://jsonplaceholder.typicode.com/postsLinks and create a bas
 ![Load More Posts](/screen/screen2.png)
 
 ## Instruction to run this program (Z shell)
-1. Install Node.js if necessary
+1. Install Node.js
 ```
 https://nodejs.org/en/download/current
 ```
@@ -37,7 +37,8 @@ or
 brew install node
 ```
 2. Install creat-react-app package if missing.
-*npm - Node Package Manager is a software library (registry)*
+npm
+: Node Package Manager is a software library (registry)
 ```
 npm install create-react-app
 ```
