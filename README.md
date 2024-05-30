@@ -57,7 +57,6 @@ npx create-react-app basic_blog
 cd basic_blog
 npm start
 ```
-![start successfully](/screen/screen3.png)
 
 ### Other commands for reference:
 - Bundles the app into static files for production.
@@ -83,13 +82,13 @@ basic_blog
 ├── .gitignore
 ├── public
 │   ├── favicon.ico
-│   ├── index.html ***=> change title of page***
+│   ├── index.html   => change title of page
 │   └── manifest.json
-├── components ***=>create and store components here if too many***
-└── src ***=> most often use***
-    ├── App.css ***=> CSS of the component***
-    ├── App.js ***=> App() funtion returns JSX expression***
+├── components       => create and store components here if too many
+└── src => most often use
+    ├── App.css      => CSS of the component***
+    ├── App.js       => App() funtion returns JSX expression
     ├── App.test.js
-    ├── index.css ***=> CSS of the web page***
-    └──  index.js ***=> import App.js and call App() function***
+    ├── index.css    => CSS of the web page***
+    └──  index.js    => import App.js and call App() function
 ```
