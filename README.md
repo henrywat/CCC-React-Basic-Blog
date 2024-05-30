@@ -7,6 +7,7 @@
 ## Submission Date: 31 May 2024
 
 ### Technologies:
+- w3.css
 - Node.js
 - React JS
 - JSX - a language of HTML-in-JavaScript
@@ -25,6 +26,7 @@ Fetch data from https://jsonplaceholder.typicode.com/postsLinks and create a bas
 ### Screenshot
 ![Index Page](/screen/screen1.png)
 ![Load More Posts](/screen/screen2.png)
+![Compile Successfully](/screen/screen3.png)
 
 ## Instruction to run this program (Z shell)
 
@@ -54,7 +56,7 @@ npx create-react-app basic_blog
 cd basic_blog
 npm start
 ```
->The URL is 'http://localhost:3000' incase the page not loaded automatically.
+![start successfully](/screen/screen3.png)
 
 ### Other commands for reference:
 - Bundles the app into static files for production.

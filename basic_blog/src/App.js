@@ -5,22 +5,47 @@ const App = () => {
   const [posts, setPosts] = useState([]);
   const [visiblePosts, setVisiblePosts] = useState(5);
 
+  /**
+  * Fetches data from the specified URL and sets the posts state.
+  *
+  * @return {Promise<void>} - A promise that resolves when the data is fetched and the posts state is set.
+  */
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json())
-      .then(data => setPosts(data))
-      .catch(error => console.error('Error fetching data:', error));
+    const fetchData = async () => {
+      try {
+        console.log('Starting data fetch...');
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const data = await response.json();
+        console.log('Data fetched successfully. Setting state...');
+        setPosts(data);
+        console.log('State set successfully.');
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
+  /**
+  * Increases the number of visible posts by 5.
+  *
+  * @return {void} No return value.
+  */
   const loadMore = () => {
-    setVisiblePosts(prevVisiblePosts => prevVisiblePosts + 5);
+    console.log('Current visiblePosts:', visiblePosts);
+    setVisiblePosts(prevVisiblePosts => {
+      const newVisiblePosts = prevVisiblePosts + 5;
+      console.log('New visiblePosts:', newVisiblePosts);
+      return newVisiblePosts;
+    });
   };
 
   return (
     <div>
-      <table class="w3-table-all w3-margin-top" id="blogTable">
+      <table className="w3-table-all w3-hoverable w3-margin-top" id="blogTable">
         <thead>
-          <tr>
+          <tr className="w3-red">
             <th>#</th>
             <th>Title</th>
           </tr>
@@ -28,14 +53,14 @@ const App = () => {
 
         <tbody>
         {posts.slice(0, visiblePosts).map(post => (
-          <tr key={post.id}>
+          <tr key={post.id} className="w3-hover-green">
             <td>{post.id}</td>
             <td>{post.title}</td>
           </tr>
         ))}
         </tbody>
       </table>
-      <button onClick={loadMore} id="loadMoreBtn" class="loadMoreBtn">Load More Posts</button>
+      <button onClick={loadMore} id="loadMoreBtn" className="loadMoreBtn">Load More Posts</button>
     </div>
   );
 };

@@ -7,8 +7,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <p class="w3-center title">Basic Blog</p>
-    <p class="w3-center subTitle">Create Career College Web Design & Dev. React 2024 Final Assignment by Henry Wat</p>
+    <p className="w3-center title">Basic Blog</p>
+    <p className="w3-center subTitle">Create Career College Web Design & Dev. React 2024 Final Assignment by Henry Wat</p>
     <App />
   </React.StrictMode>
 );
