@@ -7,16 +7,15 @@
 ## Submission Date: 31 May 2024
 
 ### Technologies:
-- VSCode
 - Node.js
 - React JS
-
+- JSX - a language of HTML-in-JavaScript
 ---
 
 # Basic Blog
 
 ## Objective
-Fetch data from https://jsonplaceholder.typicode.com/postsLinks and create a basic list of blog posts. The first 5 post titles will be displayed initially, clicking the "Load More" button will display the next 5 post topics.
+Fetch data from https://jsonplaceholder.typicode.com/postsLinks and create a basic list of blog posts. The first 5 post titles will be displayed initially, clicking the "Load More Posts" button will display the next 5 post topics.
 
 ## Resources
 - Mdn Web Docs: [Getting Started with REACT](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
@@ -28,7 +27,8 @@ Fetch data from https://jsonplaceholder.typicode.com/postsLinks and create a bas
 ![Load More Posts](/screen/screen2.png)
 
 ## Instruction to run this program (Z shell)
-1. Install Node.js
+
+**1. Install Node.js**
 ```
 https://nodejs.org/en/download/current
 ```
@@ -36,17 +36,20 @@ or
 ```
 brew install node
 ```
-2. Install creat-react-app package if missing.
+
+**2. Install creat-react-app package if missing.**
 ```
 npm install create-react-app
 ```
 >npm - Node Package Manager is a software library (registry)
-3. Create basic_blog REACT App
+
+**3. Create basic_blog REACT App**
 ```
 npx create-react-app basic_blog
 ```
 >npx - Node Package eXecute is simply an NPM package runner.
-4. Starts the development server.
+
+**4. Starts the development server.**
 ```
 cd basic_blog
 npm start
