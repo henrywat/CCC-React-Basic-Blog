@@ -86,9 +86,9 @@ basic_blog
 │   └── manifest.json
 ├── components       => create and store components here if too many
 └── src => most often use
-    ├── App.css      => CSS of the component***
+    ├── App.css      => CSS of the component
     ├── App.js       => App() funtion returns JSX expression
     ├── App.test.js
     ├── index.css    => CSS of the web page***
-    └──  index.js    => import App.js and call App() function
+    └── index.js     => import App.js and call App() function
 ```
